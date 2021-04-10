@@ -7,6 +7,13 @@ const products=[
         annualsaving:"$150"
     },
     {
+        productName:"dummy5",
+        price:"$1800",
+        id:5,
+        volume:"40",
+        annualsaving:"$140"
+    },
+    {
         productName:"Pro Prestige 65-15 amp",
         price:"$1600",
         id:2,
@@ -154,7 +161,7 @@ card.appendChild(moredetails);
 let anchor=document.createElement("a");
 anchor.innerHTML="View More Details"
 anchor.addEventListener("click",sam);
-moredetails.appendChild(anchor);
+moredetails.appendChild(anchor);    
 }
 
 selectVolume(document.getElementById("selected"));
