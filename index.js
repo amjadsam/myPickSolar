@@ -138,6 +138,7 @@ dash3.setAttribute("style","border-bottom:1px dashed gray; color:white");
 dash3.innerHTML="a gap of some length to dashed ";
 equipmentCostParentDiv.appendChild(dash3);
 let amount3=document.createElement("p");
+amount3.setAttribute("style","color:orange");
 amount3.innerHTML="$1500";
 equipmentCostParentDiv.appendChild(amount3);
 let finaldiv=document.createElement("div");
@@ -161,6 +162,7 @@ let moredetails=document.createElement("div");
 moredetails.className="more-details"
 card.appendChild(moredetails);
 let anchor=document.createElement("a");
+anchor.setAttribute("style","cursor:pointer");
 anchor.innerHTML="View More Details"
 anchor.addEventListener("click",sam);
 moredetails.appendChild(anchor);    
