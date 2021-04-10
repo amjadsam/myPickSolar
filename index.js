@@ -44,6 +44,8 @@ let card=document.createElement("div");
 card.className="card";
 container.appendChild(card);
 card.setAttribute("volume",products[i].volume);
+card.setAttribute("value",products[i].price);
+card.setAttribute("savings",products[i].annualsaving);
 let topText=document.createElement("div");
 topText.className="top-text";
 card.appendChild(topText);
@@ -179,10 +181,16 @@ function selectVolume(element) {
   }
 
 
-  function sam()
+  function sam(e)
   {
       let show=document.getElementById("popup");
       show.classList.remove("popup2");
+      let finalPrice=document.getElementById("finalPrice");
+      finalPrice.innerHTML=e.path[2].getAttribute("value");
+      let annualsaving=document.getElementById("annualSaving");
+      annualsaving.innerHTML=e.path[2].getAttribute("savings");
+      console.log(e.path[2])
+
   }
   function removePopup()
   {
