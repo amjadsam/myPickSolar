@@ -1,6 +1,6 @@
 const products=[
     {
-        productName:"Pro Prestige 50 leakgaurd",
+        productName:"Pro Prestige 65 15-amp",
         price:"$1500",
         id:1,
         volume:"40",
@@ -14,7 +14,7 @@ const products=[
         annualsaving:"$140"
     },
     {
-        productName:"Pro Prestige 65-15 amp",
+        productName:"Pro Prestige 50 leakgaurd",
         price:"$1600",
         id:2,
         volume:"50",
